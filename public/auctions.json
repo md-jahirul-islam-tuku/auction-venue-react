@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Leica M3 Camera",
+    "description": "Classic 1950s film camera in working condition.",
+    "currentBidPrice": "2,850",
+    "timeLeft": "2h 15m",
+    "bidsCount": 8,
+    "image": "https://i.ibb.co/Jj7bTJ7J/Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "1965 Gibson SG Standard Electric Guitar",
+    "description": "RTX 4060, 16GB RAM, 1TB SSD — almost new.",
+    "currentBidPrice": "1,560",
+    "timeLeft": "5h 40m",
+    "bidsCount": 14,
+    "image": "https://i.ibb.co/0yhQRVSH/Bid2-min.png"
+  },
+  {
+    "id": 3,
+    "title": "Original Apple Macintosh 128K (1984)",
+    "description": "Lightweight alloy frame, hydraulic brakes, great condition.",
+    "currentBidPrice": "1,790",
+    "timeLeft": "1d 03h",
+    "bidsCount": 21,
+    "image": "https://i.ibb.co/674v8CnN/Bid3-min.png"
+  },
+  {
+    "id": 4,
+    "title": "Rolex Submariner 16610",
+    "description": "Waterproof, heart rate monitor, GPS tracking.",
+    "currentBidPrice": "1,750",
+    "timeLeft": "12h 55m",
+    "bidsCount": 5,
+    "image": "https://i.ibb.co/2141zFBS/Bid4-min.png"
+  },
+  {
+    "id": 5,
+    "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+    "description": "Ergonomic mesh chair with adjustable armrests.",
+    "currentBidPrice": "1,270",
+    "timeLeft": "05h 20m",
+    "bidsCount": 3,
+    "image": "https://i.ibb.co/JFdHk8nR/Bid5-min.png"
+  },
+  {
+    "id": 6,
+    "title": "Mid-Century Modern Eames Lounge Chair",
+    "description": "Ergonomic mesh chair with adjustable armrests.",
+    "currentBidPrice": "1,890",
+    "timeLeft": "08h 20m",
+    "bidsCount": 3,
+    "image": "https://i.ibb.co/zW90LxYK/Bid6-min.png"
+  },
+  {
+    "id": 7,
+    "title": "Banksy Original Screen Print",
+    "description": "Ergonomic mesh chair with adjustable armrests.",
+    "currentBidPrice": "1,940",
+    "timeLeft": "7h 30m",
+    "bidsCount": 3,
+    "image": "https://i.ibb.co/8ncwz2Xw/Bid7-min.png"
+  }
+]
