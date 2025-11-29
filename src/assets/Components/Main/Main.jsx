@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const Main = ({ handleFavoriteSelect, clickedItems,totalPrice,handleDelete }) => {
+const Main = ({
+  handleFavoriteSelect,
+  clickedItems,
+  totalPrice,
+  handleDelete,
+}) => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -124,8 +129,12 @@ const Main = ({ handleFavoriteSelect, clickedItems,totalPrice,handleDelete }) =>
               </div>
             </div>
           </div>
+          <div className="flex justify-between py-3 px-3 text-xl border-b-2 border-[#ddd]">
+            <h2>Total bids Amount</h2>
+            <h2>${totalPrice}</h2>
+          </div>
           <div
-            className="text-center py-8 border-b-2 border-[#ddd]"
+            className="text-center py-8"
             style={{ display: clickedItems.length === 0 ? "block" : "none" }}
           >
             <h2 className="text-xl font-semibold pb-3">No favorites yet</h2>
@@ -133,10 +142,10 @@ const Main = ({ handleFavoriteSelect, clickedItems,totalPrice,handleDelete }) =>
               Click the heart icon on any item to add it to your favorites
             </p>
           </div>
+
           <table className="text-center w-full">
             <tbody>
-              {clickedItems.map((item) => 
-              (
+              {clickedItems.map((item) => (
                 <tr className="border-b-2 border-slate-200" key={item.id}>
                   <td
                     style={{
@@ -167,7 +176,10 @@ const Main = ({ handleFavoriteSelect, clickedItems,totalPrice,handleDelete }) =>
                       borderBottom: "1px solid #ddd",
                     }}
                   >
-                    <button onClick={()=>handleDelete(item.id)} className="cursor-pointer">
+                    <button
+                      onClick={() => handleDelete(item.id)}
+                      className="cursor-pointer"
+                    >
                       <RiDeleteBin6Line className=" hover:text-red-500 text-xl" />
                     </button>
                   </td>
@@ -175,10 +187,6 @@ const Main = ({ handleFavoriteSelect, clickedItems,totalPrice,handleDelete }) =>
               ))}
             </tbody>
           </table>
-          <div className="flex justify-between py-3 px-3 text-xl">
-            <h2>Total bids Amount</h2>
-            <h2>${totalPrice}</h2>
-          </div>
         </div>
       </div>
     </div>
