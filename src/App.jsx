@@ -11,11 +11,17 @@ function App() {
     const newItems = [...clickedItems, item];
     setItems(newItems);
   };
+  const totalPrice = clickedItems.reduce((sum, item) => sum + item.currentBidPrice, 0);
+  const handleDelete = (id) => {
+  setItems(clickedItems.filter(item => item.id !== id));
+};
   return (
     <div style={{ caretColor: "transparent" }} className="bg-slate-200">
       <Navbar></Navbar>
       <Header></Header>
       <Main
+      handleDelete={handleDelete}
+        totalPrice={totalPrice}
         clickedItems={clickedItems}
         handleFavoriteSelect={handleFavoriteSelect}
       ></Main>

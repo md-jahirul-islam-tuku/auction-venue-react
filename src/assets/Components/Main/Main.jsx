@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const Main = ({ handleFavoriteSelect, clickedItems }) => {
+const Main = ({ handleFavoriteSelect, clickedItems,totalPrice,handleDelete }) => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -135,7 +135,8 @@ const Main = ({ handleFavoriteSelect, clickedItems }) => {
           </div>
           <table className="text-center w-full">
             <tbody>
-              {clickedItems.map((item) => (
+              {clickedItems.map((item) => 
+              (
                 <tr className="border-b-2 border-slate-200" key={item.id}>
                   <td
                     style={{
@@ -166,7 +167,7 @@ const Main = ({ handleFavoriteSelect, clickedItems }) => {
                       borderBottom: "1px solid #ddd",
                     }}
                   >
-                    <button className="cursor-pointer">
+                    <button onClick={()=>handleDelete(item.id)} className="cursor-pointer">
                       <RiDeleteBin6Line className=" hover:text-red-500 text-xl" />
                     </button>
                   </td>
@@ -176,7 +177,7 @@ const Main = ({ handleFavoriteSelect, clickedItems }) => {
           </table>
           <div className="flex justify-between py-3 px-3 text-xl">
             <h2>Total bids Amount</h2>
-            <h2>$0000</h2>
+            <h2>${totalPrice}</h2>
           </div>
         </div>
       </div>
